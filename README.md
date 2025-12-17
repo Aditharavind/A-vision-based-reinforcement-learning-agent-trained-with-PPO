@@ -18,10 +18,59 @@ The video below shows the trained agent navigating the environment after learnin
 > Other moving objects are part of the environment dynamics.
 
 <p align="center">
-  <img src="ppo.gif" width="400"/>
+  <img src="ppo.gif.gif" width="400"/>
 </p>
 
 ---
 
 ## 🧩 Architecture Overview
+Visual Observation (Pixels)
+↓
+CNN-Based Perception
+↓
+Policy Network (PPO)
+↓
+Action Selection
+
+
+This loop represents the core of many robotics and autonomous systems, abstracted here into a lightweight simulation.
+
+---
+
+## 🔍 Technical Details
+
+- **Algorithm:** Proximal Policy Optimization (PPO)
+- **Policy:** CNN-based (`CnnPolicy`)
+- **Environment:** `ALE/Freeway-v5` (Gymnasium, Atari)
+- **Observations:** Raw pixel frames with Atari preprocessing
+- **Training:** 500K timesteps in simulation
+- **Frameworks:** Gymnasium, Stable-Baselines3, PyTorch
+
+---
+
+## 🚀 Results
+
+- The agent learns timing and obstacle-aware navigation
+- Behavior emerges purely from reward-driven learning
+- No heuristics or rule-based logic are used
+
+---
+
+## 🛠️ Future Work
+
+- Explicit world-state modeling
+- Modular robot-brain architecture
+- Language-based task reasoning
+- Multi-agent extensions
+- Transfer to robotics-inspired environments
+
+---
+
+## 📌 Notes
+
+This repository is part of a **learning in public / building in public** journey focused on understanding how modern robot brains are designed—starting from perception and progressively moving toward reasoning and control.
+
+---
+
+
 
